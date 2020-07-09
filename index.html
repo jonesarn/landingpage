@@ -1,5 +1,6 @@
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
 <style>
 	body,html{
 		margin:0;
@@ -66,11 +67,25 @@ iframe{
 	opacity:.35;
 }
 .box{
-	height:100px;
-	width:100px;
+	border: 10px solid black;
+	background:silver;
+	opacity:.60;
+	padding:70px 75px 75px 70px;
+	margin:100px;
+	background-clip:padding-box;
+	color:black;
+	text-align:center;
+	height:200px;
+	width:200px;
+	
 }
-.mission{
-	background-color:white;	
+.box h1{
+	position:relative;
+	top:-25px;
+	
+}
+.title-links{
+font-family: 'Bangers', cursive,;
 }
 </style>
 </head>
@@ -110,7 +125,12 @@ iframe{
 	<br>
 	<br>
 	<br>
-	<h3>Mission Statement</h3>
+	<h2 class="title-links">Mission Statement</h2>
+	<div class="box word">
+	<h1>Be creative.<br>Be Responsive.<br>And always express your love for anime.</h1>
+	</div>
+	<br>
+	<br>
 	<div id="youtube-videos">
 	<iframe width="25%" height="315" src="https://www.youtube.com/embed/9jcSFt9Z-nI" frameborder="0"
 	allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -131,9 +151,10 @@ iframe{
 	allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	
-	<div class="box merch">
+	<div class="box">
+	
 	</div>
-	<div class="box ideas">
+	<div class="box">
 	</div>
 	
 </main>
