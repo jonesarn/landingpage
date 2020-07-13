@@ -1,12 +1,14 @@
-<html>
+html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+
 <style>
 	body,html{
 		margin:0;
 		padding:0;
 		color:white;
+		
 	}
 	.fullscreen-bg {
     position: fixed;
@@ -26,6 +28,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+	
 }
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
@@ -86,7 +89,7 @@ iframe{
 	text-align:center;
 	height:200px;
 	width:200px;
-	
+	text-transform:uppercase;
 }
 .box h1{
 	position:relative;
@@ -94,20 +97,41 @@ iframe{
 	
 }
 .title-links{
-font-family:'Bangers', cursive;
+	font-family:'Bangers', cursive;
+	text-align:center;
 }
 #youtube-videos{
-	padding:100px;
+	padding:7rem;
+	max-width:1200px;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
+	grid-gap:10px;
+	
 }
-h2{
+#inspira-links{
 	text-align:center;
+	color:white;	
+}
+#inspira-links li{
+	list-style-type:none;	
+}
+.img-center{
+	opacity:.4;
+}
+.merch_img{
+	text-align:center;
+	opacity:.4;
+	padding:1rem;
+	border:solid 1px black;
+	border-background-color:white;
 }
 </style>
 </head>
 <body>
 <header id="header">
 		<ul>
-			<li id="Title">AMV</li>
+			<strong><li id="Title">AMV</li></strong>
 			<li class="links">
 				<a href="#mission">Mission Statement</a>
 			</li>
@@ -118,7 +142,7 @@ h2{
 				<a href="#youtube-videos">More AMV</a>
 			</li>
 			<li class="links">
-				<a href="#">Merch</a>
+				<a href="#merch">Merch</a>
 			</li>
 			<li class="links">
 				<a href="#">Furure Ideas</a>
@@ -155,52 +179,82 @@ h2{
 	<br>
 	<center><h2 class="title-links" id="mission">Mission Statement</h2></center>
 	<center><div class="box">
-	<h1>Be creative.<br>Be Responsive.<br>And always express your love for anime.</h1>
+	<h2>Be creative.<br>Be Responsive.<br>And always express your love for anime.</h2>
 	</div></center>
 	<br>
 	<br>
 	<h2 class='title-links'id='inspira'>Inspirations</h2>
-	<ul>
+	<center><div class="box">
+		<center><h2>These are the people that inspired me to do this.
+			Click on image to enjoy their work.</h2></center>
+	</div></center>
+	<br>
+	<ul id="inspira-links">
 		<li>
-			<h3><a href="https://www.youtube.com/channel/UCbIZCUQrF65R4JxHdyLUbaA">Ape Trvp Visuals</a></h3>
-				<img class="img-center" src="ape.jpg">
+			
+				<a href="https://www.youtube.com/channel/UCbIZCUQrF65R4JxHdyLUbaA">
+					<img class="img-center" src="ape.jpg">
+				</a>
+			
 		</li>
+		<br>
 		<li>
-			<h3><a href="">TRASH</a></h3>
-				<img class="img-center" src="trash.jpg">
+			<img class="img-center" src="trash.jpg">
+				<a href="https://www.youtube.com/channel/UCkQ62tvPlVVb2WLppjRfPdQ"></a>
+			</img>
+				
 		</li>
+		<br>
 		<li>
-			<h3><a href="">Tocka</a></h3>
+			<a href="https://www.youtube.com/channel/UCvBOa6bw6ZQ9kcSz7d1J1qw/videos">
 				<img class="img-center" src="tocka.png">
+			</a>
 		</li>	
 	</ul>
 	<br>
 	<br>
-	<br>
+	<h2 class="title-links">More Anime</h2>
 	<div id="youtube-videos">
-	<iframe width="25%" height="315" src="https://www.youtube.com/embed/9jcSFt9Z-nI" frameborder="0"
+	<iframe width="75%" height="315" src="https://www.youtube.com/embed/9jcSFt9Z-nI" frameborder="0"
 	allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
-	<iframe width="25%" height="315" src="https://www.youtube.com/embed/yDETVPFdbT4" frameborder="0" 
+	<iframe width="75%" height="315" src="https://www.youtube.com/embed/yDETVPFdbT4" frameborder="0" 
 	allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
-	<iframe width="25%" height="315" src="https://www.youtube.com/embed/CZTR8KdWjjg" frameborder="0"
+	<iframe width="75%" height="315" src="https://www.youtube.com/embed/CZTR8KdWjjg" frameborder="0"
 	allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
-	<iframe width="25%" height="315" src="https://www.youtube.com/embed/6wmRQUc96yM" frameborder="0" 
+	<iframe width="75%" height="315" src="https://www.youtube.com/embed/6wmRQUc96yM" frameborder="0" 
 	allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
-	<iframe width="25%" height="315" src="https://www.youtube.com/embed/CG8ucav19Ew" frameborder="0" 
+	<iframe width="75%" height="315" src="https://www.youtube.com/embed/CG8ucav19Ew" frameborder="0" 
 	allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
-	<iframe width="25%" height="315" src="https://www.youtube.com/embed/vA8YPpwj4ao" 
+	<iframe width="75%" height="315" src="https://www.youtube.com/embed/vA8YPpwj4ao" 
 	frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-	<div class="box">
-	
 	</div>
-	<div class="box">
-	</div>
+	<h2 class="title-links" id="#merch">Merch</h2>
+	<center>
+		<img class="merch_img"src="itachi_hoodie.jpg" height="300px" width="300px">
+		<img class="merch_img"src="naruto_hoodie.jpg" height="300px" width="300px">
+		<img class="merch_img"src="one_punch_hoodie.jpg" height="300px" width="300px">
+	</center>
+	<br>
+	<h2 class="title-links">Future Ideas</h2>
+	<center>
+		<div class="box">
+			<h2>
+				make more amv.
+				<br>
+				learn photoshop.
+				<br>
+				and how to video edit
+			</h2>
+		</div>
+	</center>
 </main>
+<footer>
+
+</footer>
 </body>
 </html>
